@@ -1,0 +1,25 @@
+.container {
+    padding-left: 4em;
+    background-color: #f1f1f1;
+}
+
+.google_logo {
+    width: 30%;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+span {
+    color: red;
+}
+
+.submit {
+    color: white;
+    background-color: #0080FF;
+}

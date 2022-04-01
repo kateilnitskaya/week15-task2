@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="stylesheet" href="assets/styles/week15-task2.css">
+</head>
+
+<body>
+    <script src="week15-task2.js"></script>
+
+    <div class="container">
+        <img src="http://3.bp.blogspot.com/-uz_GUU8lmtw/VjJ1om7DULI/AAAAAAAAHhA/HJRjm6OWkoE/s1600/googles-new-logo-5078286822539264.3-hp2x.gif"
+            alt="google_logo_animation" class="google_logo">
+
+        <h1>Регистрация</h1>
+
+        <form name='form' onsubmit='return validate()'>
+
+            <p>Как вас зовут?</p>
+            <input type='text' name='name'>
+            <span id='namef'></span><br />
+
+            <p>Придумайте имя пользователя</p>
+            <input type='text' name='username'>
+            <span id='usernamef'></span><br />
+
+            <p>Придумайте пароль</p>
+            <input type='password' name='password'>
+            <span id='passwordf'></span><br />
+
+            <p>Подтвердите пароль</p>
+            <input type='password' name='password2'>
+            <span id='password2f'></span><br />
+
+            <p>Дата рождения</p>
+            <input type="date" name="date">
+            <span id='datef'></span><br />
+
+            <p>Пол</p>
+            <input type="radio" name="sex" value="female">Женский<br>
+            <input type="radio" name="sex" value="male">Мужской<br>
+            <input type="radio" name="sex" value="other">Другое<br>
+            <span id='sexf'></span><br />
+
+            <p>Мобильный телефон</p>
+            <input type="tel" name="tel" value="+79023333333">
+            <span id='telf'></span><br />
+
+            <p>Запасной адрес эл. почты</p>
+            <input type='text' name='email'>
+            <span id='emailf'></span><br />
+
+            <p>Страна</p>
+            <select name="country">
+                <option>Страна 1</option>
+                <option>Страна 2</option>
+                <option>Страна 3</option>
+                <option>Страна 4</option>
+            </select>
+            <span id='countryf'></span><br />
+
+            <br>
+            <input type="submit" class="submit" value="Далее" onclick="alert(`Добро пожаловать, ${name}!`)">
+            <span id='submitf'></span><br />
+            <br><br>
+        </form>
+    </div>
+</body>
+
+</html>
